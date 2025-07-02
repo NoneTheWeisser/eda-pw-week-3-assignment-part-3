@@ -115,24 +115,35 @@ console.log('9. Filling boxes with a "while" loop');
 let parts = 572;
 let boxesFilled = 0;
 
+while (parts >= 7) {
+  parts = parts - 7;
+  boxesFilled = boxesFilled + 1;
+}
+console.log(`Boxes Filled:`, boxesFilled);
+console.log(`Parts remaining:`, parts);
+
 // DO NOT MODIFY
 // Used for automated testing
 try {
   module.exports = {
-    partsNeeded: typeof partsNeeded !== 'undefined' ? partsNeeded : undefined,
-    supplyChanges: typeof supplyChanges !== 'undefined' ? supplyChanges : undefined,
-    secondItem: typeof secondItem !== 'undefined' ? secondItem : undefined,
-    removedItem: typeof removedItem !== 'undefined' ? removedItem : undefined,
-    positives: typeof positives !== 'undefined' ? positives : undefined,
-    negatives: typeof negatives !== 'undefined' ? negatives : undefined,
-    zeroes: typeof zeroes !== 'undefined' ? zeroes : undefined,
-    stretchPositives: typeof stretchPositives !== 'undefined' ? stretchPositives : undefined,
-    stretchNegatives: typeof stretchNegatives !== 'undefined' ? stretchNegatives : undefined,
-    stretchZeroes: typeof stretchZeroes !== 'undefined' ? stretchZeroes : undefined,
-    totalParts: typeof totalParts !== 'undefined' ? totalParts : undefined,
-    parts: typeof parts !== 'undefined' ? parts : undefined,
-    boxesFilled: typeof boxesFilled !== 'undefined' ? boxesFilled : undefined,
-  }
+    partsNeeded: typeof partsNeeded !== "undefined" ? partsNeeded : undefined,
+    supplyChanges:
+      typeof supplyChanges !== "undefined" ? supplyChanges : undefined,
+    secondItem: typeof secondItem !== "undefined" ? secondItem : undefined,
+    removedItem: typeof removedItem !== "undefined" ? removedItem : undefined,
+    positives: typeof positives !== "undefined" ? positives : undefined,
+    negatives: typeof negatives !== "undefined" ? negatives : undefined,
+    zeroes: typeof zeroes !== "undefined" ? zeroes : undefined,
+    stretchPositives:
+      typeof stretchPositives !== "undefined" ? stretchPositives : undefined,
+    stretchNegatives:
+      typeof stretchNegatives !== "undefined" ? stretchNegatives : undefined,
+    stretchZeroes:
+      typeof stretchZeroes !== "undefined" ? stretchZeroes : undefined,
+    totalParts: typeof totalParts !== "undefined" ? totalParts : undefined,
+    parts: typeof parts !== "undefined" ? parts : undefined,
+    boxesFilled: typeof boxesFilled !== "undefined" ? boxesFilled : undefined,
+  };
 } catch (e) {
   // Do nothing
 }
